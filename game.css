@@ -99,11 +99,11 @@ input:focus, select:focus {
     visibility: hidden;
     color: white;
     display: block;
-    width: 60vh;
-    height: 45vh;
+    width: 50vh;
+    height: 35vh;
     position: fixed;
-    margin-top: 160px;
-    margin-left: 530px;
+    margin-top: 100px;
+    margin-left: 580px;
     top: 0;
     left: 0;
     bottom: 0;
