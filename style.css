@@ -1,0 +1,255 @@
+.heading {
+    font-family: "Porter Sans Block", sans-serif;
+    font-size: 6em; 
+    position: absolute;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; 
+    color: black;
+    display: bloc;
+    text-shadow: 4px solid grey;
+}
+
+body {
+    background-image: url('WhatsApp Image 2024-01-29 at 12.17.14_bedd393a.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+#boyimg {
+    height: 700px;
+    position: relative;
+    bottom: 1;
+    left: 0px;
+    margin: 0;
+    top: 170px;
+    width: 900px;
+    right: 50px;
+}
+
+#lb {
+    font-family: "Porter Sans Block", sans-serif;
+}
+.playbtn{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    font-family: "Porter Sans Block", sans-serif;
+    font-size: large;
+    cursor: pointer;
+    margin-left: 1100px;
+    border-radius: 50px;
+    margin-top: -470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid grey;
+
+}
+.bgimg{
+
+}
+.iconmusic {
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    
+    
+}
+#soundIcon{
+    border: 10px solid rgb(0, 0, 0);
+    width: 500px;
+}
+.soundbtn{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+  
+.playbtntext{
+    font-size: 50px; 
+    position: relative;
+
+}
+.play{
+    display: flex;
+    bottom: 100px;
+    right: 50px;
+}
+.iconmusic{
+    
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    font-size: 24px; 
+}
+.mobiletitle{
+    
+}
+.audio-image{
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    font-size: 24px; 
+    height: 50px;
+    margin-top: -600px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 4em;
+        margin-top: 250px;
+    }
+
+    #boyimg {
+        height: 400px;
+        width: 70%;
+        margin: 0 auto; /* Center the image */
+        top: -10px;
+        right: 60px;
+    }
+
+    .playbtn {
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: -10px; 
+        margin-left: 200px;
+    }
+
+    .playbtntext {
+        font-size: 30px; 
+    }
+    .l-title{
+        display:none;
+    }
+    body{
+        background-image: none;
+    @media screen and (max-width: 768px) {
+    body {
+        font-family: "Porter Sans Block", sans-serif;
+    }
+    
+    .heading {
+        font-size: 6em; 
+        position: absolute;
+        top: 20%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: black;
+        text-shadow: 4px solid grey;
+    }
+    
+    .playbtn {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        height: 60px;
+        width: 200px;
+        font-size: large;
+        cursor: pointer;
+        margin-left: 1100px;
+        margin-top: -470px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid grey;
+    }
+    
+    /* Add animation to the heading */
+    @keyframes headingAnimation {
+        0% { transform: translateY(-100px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    .heading {
+        animation: headingAnimation 1s ease forwards;
+    }
+    
+    /* Add animation to the play button */
+    @keyframes playBtnAnimation {
+        0% { transform: translateY(100px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+    
+    .playbtn {
+        animation: playBtnAnimation 1s ease forwards;
+    }
+    
+    /* Add animation to the boy image */
+    @keyframes boyImgAnimation {
+        0% { transform: scale(0); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    
+    #boyimg {
+        animation: boyImgAnimation 1s ease forwards;
+    }
+    .heading {
+        font-size: 4em;
+        margin-top: 250px;
+    }
+
+    #boyimg {
+        height: 400px;
+        width: 70%;
+        margin: 0 auto; /* Center the image */
+        top: -10px;
+        right: 60px;
+    }
+
+    .playbtn {
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: -10px; 
+        margin-left: 200px;
+    }
+
+    .playbtntext {
+        font-size: 30px; 
+    }
+    .l-title {
+        display:none;
+    }
+    body {
+        background-image: none;
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .mobiletitle {
+        display: none;
+    }
+}
+
+
+}
+}
+@media screen and (min-width: 768px) {
+
+    .mobiletitle{
+        display: none;
+    }
+
+}  
+
+#musicControl{
+    display: absolute;
+    top: 10px;
+    left: 20px;
+    height: 50px;
+    /* margin-top: -660px; */
+
+}

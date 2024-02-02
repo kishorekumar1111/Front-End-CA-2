@@ -50,7 +50,7 @@ html, body {
     margin: 0;
     display: block;
     border: solid px black;
-    height: 1000px;
+    height: 600px;
 }
 .Message-Container{
   height: 60px;
@@ -97,18 +97,18 @@ input:focus, select:focus {
 }
 #Message-Container {
     visibility: hidden;
-    color: rgb(245, 232, 232);
+    color: white;
     display: block;
     width: 40vh;
     height: 25vh;
     position: fixed;
     margin-top: 260px;
-    margin-left: 765px;
+    margin-left: 665px;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgb(226, 0, 0);
+    background-color: black;
     z-index: 1;
     border-radius: 30px;
 }
@@ -182,8 +182,8 @@ input:focus, select:focus {
         margin: 0;
         display: block;
         border: solid 2px black;
-        height: 600px;
-        margin-top: 400px;
+        height: 300px;
+        margin-top: 200px;
 }
 #Message-Container {
   visibility: hidden;
