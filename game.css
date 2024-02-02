@@ -268,10 +268,11 @@ input:focus, select:focus {
       }
       #Message-Container {
         visibility: hidden;
-        color: white;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
         display: block;
-        width: 40vh;
-        height: 25vh;
+        width: max-content;
+        height: auto;
         position: fixed;
         margin-top: 260px;
         margin-left: 95px;
@@ -279,7 +280,7 @@ input:focus, select:focus {
         left: 0;
         bottom: 0;
         right: 0;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         z-index: 1;
         border-radius: 30px;
       }
