@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+
+  <div id="page">
+
+    <div id="Message-Container">
+      <div id="message">
+        <h1>Congratulations!</h1>
+        <p>KALVIANS NEVER QUIT!</p>
+        <p id="moves"></p>
+        <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="you rocked it!" />
+      </div>
+    </div>
+      
+    <br>
+    <div id="menu">
+      <div class="custom-select">
+        <select id="diffSelect">
+                  <option value="10">LEVEL 1</option>
+                  <option value="15">LEVEL 2</option>
+                  <option value="25">LEVEL 3</option>
+                  <option value="38">LEVEL 4</option>                                      
+              </select>
+      </div>
+      <input id="startMazeBtn" type="button" onclick="makeMaze()" value="START" />
+    </div>
+    <div class="title"><img src="uncut.thelostboy-removebg-preview.png" alt="uncut.thelostboy-removebg-preview.png"></div>
+    <div class="theboy"><img src="images-removebg-preview (1).png" alt=""></div>
+
+    <div id="view">
+      <div id="mazeContainer">
+        <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+      </div>
+    </div>
+    <p id="instructions">Use arrow keys to move the key to the house!</p>
+
+  </div>
+</script>
+
+
+<audio id="bgMusic" loop>
+  <source src="./epic_loki_theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<img id="musicControl" src="./sound_PNG20.png" alt="Music Control">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var bgMusic = document.getElementById("bgMusic");
+  var musicControl = document.getElementById("musicControl");
+  var isPlaying = false;
+
+  musicControl.addEventListener("click", function() {
+    if (isPlaying) {
+      bgMusic.pause();
+      isPlaying = false;
+      musicControl.src = "sound_PNG20.png"; // Change image to play icon
+    } else {
+      bgMusic.play();
+      isPlaying = true;
+      musicControl.src = "Pause-Button-PNG-Pic.png"; // Change image to pause icon
+    }
+  });
+});
+</script>
+</script>         
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
